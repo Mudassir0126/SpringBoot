@@ -7,6 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class RestControllerDemo {
 
 
+@GetMapping("/hello")
+public String Hello(){
+    return "hello";
+}
 
     @GetMapping("/")
     public static String Hey(){
